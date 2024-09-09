@@ -1,0 +1,107 @@
+footer{
+    position: absolute;
+    bottom: 0;
+}
+.signin{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(230, 203, 179, 0.642) ;
+    bottom: 0;
+    top: 0;
+    z-index: 2000;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.signin .sign-up-details{
+    width: 40%;
+    height: 95vh;
+    backdrop-filter: blur(1px);
+    background-color: rgba(230, 203, 179, 0.288);
+    border-radius: 50px;
+    border: 3px solid rgba(2, 104, 90, 0.999) ;
+    box-shadow: 0px 5px 15px grey;
+}
+.heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    color: rgba(2, 104, 90, 0.999);
+    font-size: xx-large;
+}
+.heading h1{
+    position: relative;
+    left: 10%;
+    font-size: xx-large;
+}
+.sign-up-details .heading a{
+    text-decoration: none;
+}
+.sign-up-details .heading a i{
+    position: relative;
+    right: 100%;
+    color: rgba(2, 104, 90, 0.999);
+    transition: all 0.3s ease-in-out;
+}
+.sign-up-details .heading a i:hover{
+    transform: scale(1.1);
+}
+.sign-up-details .details{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+    border-top: 1px solid rgba(2, 104, 90, 0.999);
+    border-bottom: 1px solid rgba(2, 104, 90, 0.999);
+}
+.sign-up-details .details form input{
+    width: 300px;
+    height: 45px;
+    background-color: rgb(230, 203, 179);
+    border-radius: 50px;
+    border: 1px solid rgba(2, 104, 90, 0.999);
+    color: rgba(2, 104, 90, 0.999);
+    font-weight: 600;
+    text-align: center;
+    font-size: large;
+}
+.sign-up-details .details form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 40px;
+}
+.sign-up-details .details form a button{
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid rgba(2, 104, 90, 0.999);
+    background-color: rgba(2, 104, 90, 0.999);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.sign-up-details .details form a button:hover,.sign-up-details .details form a button:active{
+    transform: scale(1.1);
+}
+.login-sec{
+    display: flex;
+    gap: 10px;
+    font-size: large;
+}
+

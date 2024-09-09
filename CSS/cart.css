@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    position: relative;
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+}
+.cartTab{
+    /* position: fixed; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15% 1fr 15%;
+}
+.cartTab h1{
+    color:rgb(9, 94, 83);
+    border-bottom: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.cartTab .btn-cart{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 2%;
+}
+.cartTab .btn-cart .shop{
+    width: 120px;
+    border-radius: 50px;
+
+}
+.cartTab .btn-cart button{
+    width: 70px;
+    height: 35px;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(0, 128, 111);
+    border: none;
+    border-style:none ;
+    font-size: large;
+    cursor: pointer;
+}
+.cartTab .btn-cart button:hover, .cartTab .btn-cart button:active{
+    transform: scale(1.1);
+    font-size: large;
+    font-weight: 900;
+    color: rgb(0, 128, 111);
+    background-color:rgb(246, 234, 212);
+    transition: all 0.3s ease;
+}
+.ListCart{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+}
+.ListCart #item1{
+    margin-top: 0%;
+}
+.ListCart .item{
+    margin-top: 2%;
+    background-color: rgba(230, 203, 179, 0.578);
+    height: 150px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 2%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    border: 1px solid black;
+    box-shadow: 0px 5px 15px grey;
+}
+.ListCart .item .image img{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    padding: 2%;
+}
+.ListCart .item .image{
+    width: 110px;
+    height: 110px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.ListCart .item .image:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+}
+.ListCart .item .name{
+    color: rgb(9, 94, 83);
+    font-size: larger;
+    font-weight: 600;
+}
+.ListCart .item .price{
+    color: rgb(9, 94, 83);
+    font-size: larger;
+    font-weight: 600;
+}
+.ListCart .item  input {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color:rgb(246, 234, 212);
+    border: 2px solid rgb(9, 94, 83);
+    width: 3.5rem;
+    text-align: center;
+    color: rgb(9, 94, 83);
+    border-radius: 50px;
+    padding: 1%;
+}
+.ListCart .item  button{
+    width: 120px;
+    height: 30px;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(0, 128, 111);
+    border: none;
+    border-style:none ;
+    font-size: large;
+    cursor: pointer;
+}
+.ListCart .item  button:hover,.ListCart .item  button:active{
+    transform: scale(1.1);
+    font-size: large;
+    border: 0.5px solid black;
+    font-weight: 900;
+    color: rgb(0, 128, 111);
+    background-color:rgb(246, 234, 212);
+    transition: all 0.3s ease;
+}
+.ListCart .item .name{
+    width: 250px;
+}
+.remove-btn{
+    margin-left: 5%;
+}
+.total{
+    margin-top: -4%;
+    width: 70%;
+    height: max-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid rgb(0, 128, 111);
+    
+}
+.total h1{
+    border-bottom: 2px solid rgb(0, 128, 111);
+}
+.total .total-price{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding:1% ;
+}
+.total .total-price h2{
+    color: rgb(9, 94, 83);
+    
+}
+.total .total-price span{
+    color: rgb(9, 94, 83);
+    font-size: large;
+}

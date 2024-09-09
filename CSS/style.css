@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    overflow-x: hidden;
+}
+.ic1{
+    width: 70px;
+    height: 70px;
+    border-radius:50px;
+}
+.ic1:hover,
+.ic1:active{
+    transform: scale(1.1);
+}
+body{
+    overflow-x: hidden;
+}
+h1,h2{
+    font-size: 2.5rem;
+    line-height: 1.7;
+}
+h3{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    display: inline-block;
+    width: 100%;
+    z-index: 999;
+}
+li{
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+.para{
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 15px;
+    background-color: rgb(230, 203, 179);
+    z-index: 100;
+}
+.nav{
+    width: 70%;
+    height: 50px;
+    padding-right:10px ;
+    font-size: large;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 40px;
+    font-weight: 300;
+}
+.n1{
+    color:black;
+}
+.n1:hover,n1:active{
+    border-bottom: 1px solid black;
+}
+
+.btn{
+    width: 80px;
+    height: 30px;
+    font-size: large;
+    border-radius: 5rem;
+    border-style: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: rgb(0, 128, 111);
+    color: white;
+}
+.btn:hover,
+.btn:active{
+    background-color: white;
+    color:rgb(2, 104, 90);
+    transform: scale(1.1);
+}
+.log-in{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(245, 222, 179, 0.584);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.5s linear;
+}
+.log-in i{
+    position: absolute;
+    font-size: x-large;
+    right: 5%;
+    top: 5%;
+    color: rgb(2, 104, 90);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.log-in i:hover,.log-in i:active{
+    transform: scale(1.2);
+}
+.log-in .log-in-details{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(230, 203, 179, 0.627);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 15px grey;
+    border-radius: 50px;
+    transition: all 1.5s linear;
+    backdrop-filter: blur(10px);
+}
+.log-in .log-in-details form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.log-in .log-in-details form h1{
+    position: relative;
+    top: -20%;
+    color: rgb(2, 104, 90);
+    font-size: xx-large;
+}
+.log-in .log-in-details form input{
+    height: 35px;
+    border-radius: 50px;
+    width: 200px;
+    background-color: rgb(230, 203, 179);
+    color: rgb(2, 104, 90);
+    font-weight: 600;
+    border: 1px solid rgb(2, 104, 90);
+    padding: 2%;
+}
+.log-in .log-in-details form #in1{
+    position: relative;
+    top: -7%;
+}
+.log-in .log-in-details form #in2{
+    position: relative;
+    top: -7%;
+}
+.log-in .log-in-details form label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: -3%;
+}
+.log-in .log-in-details form label #in3{
+    height: 20px;
+    cursor: pointer;
+}
+.log-in .log-in-details form label #remember-text{
+    position: relative;
+    left: -80px;
+    font-size: large;
+    font-weight: 600;
+    color: rgb(2, 104, 90);
+}
+.log-in .log-in-details form a button{
+    width: 120px;
+    height: 30px;
+    font-size: large;
+    border-radius: 50px;
+    border-style: none;
+    background-color: rgb(0, 128, 111);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.log-in .log-in-details form a button:hover,.log-in .log-in-details form a button:active{
+    background-color: white;
+    color:rgb(2, 104, 90);
+    transform: scale(1.2);
+}
+.log-in .log-in-details form .sign-up-message{
+    position: relative;
+    margin-top: 2%;
+    font-size: large;
+    color: rgb(2, 104, 90);
+}
+.log-in .log-in-details form .sign-up-redirect{
+    font-size: large;
+    text-decoration: underline;
+}
+.h-im{
+    width: 400px;
+    height: 400px;
+    z-index: -2;
+    position: relative;
+    margin-left: 5%;
+    margin-top: -15%;
+}
+.main-hero{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.sub-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: small;
+    width: 800px;
+    height: 600px;
+    gap: 55px;
+}
+.primar,.heading{
+    font-size: large;
+}
+.para{
+    font-size: small
+}
+.sub-hero1{
+    margin-top: 10%;
+    display: flex;
+    gap: 30px;
+    margin-left: 10%;
+}
+h4{
+font-size: medium;
+}
+.drink{
+    margin-left: 5%;
+}
+.gt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 8%;
+}
+.gtc{
+    width: 100px;
+    height: 30px;
+    border-radius: 5rem;
+    border-style: none;
+    background-color: rgb(0, 128, 111);
+    color: white;
+    cursor: pointer;
+}
+.gtc:hover,
+.gtc:active{
+    background-color:peachpuff;
+    color: rgb(0, 128, 111);
+    font-weight: 600;
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+}
+.para1{
+    margin-left: 4%;
+}
+.mug{
+    margin-top: 8%;
+}
+.box{
+ width: 350px;
+ height: 150px;
+ background-color:rgb(0, 128, 111);
+ color: white;
+ margin-top: -100px;
+ z-index: 2;
+ position: absolute;
+ display: flex;
+ align-items: center;
+ align-content: center;
+ justify-content: center;
+}
+.couple{
+    margin-left: -14%;
+}
+.main-hero{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+footer{
+    background-color: rgb(2, 104, 90);
+    font-size: x-large;
+    padding-top: 3%;
+    width: 100%;
+    height: 300px;
+    color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.fh1{
+    font-size: xx-large;
+}
+.fa1{
+    color: white;
+    font-size: medium;
+    margin-top: 8%;
+    margin-left: 2%;
+}
+.fa1:hover,
+.fa1:active{
+    border-bottom: 1px solid white;
+    transform: scale(1.1);
+}
+.social-media{
+    font-size: xx-large;
+}
+.social-icons{
+    margin-top: 4%;
+    color: white;
+    gap: 30px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.3s ease-in-out;
+}
+.social-iconss{
+    color: white;
+}
+.social-iconss:hover,
+.social-iconss:active{
+    transform: scale(1.15);
+}
+.f-image{
+    width: 80px;
+}
+#open{
+    font-size: x-large;
+    /* display: none; */
+}
+#close{
+   font-size: x-large;
+   display: none;
+}
+.mobile-navbar-btn{
+    margin-top: 2%;
+    margin-right: 2%;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-100);
+}
+.icon{
+    align-items: center;
+    font-size: x-large;
+    margin-right: 12px;
+    display: none;
+}
+.n1 .active{
+    border-bottom: 1px solid black;
+}
+@media(max-width:1000px){
+    .icon{
+        display: flex;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .box{
+        z-index: -1;
+    }
+    .nav{
+        padding:0;
+        margin: 0;
+        z-index: 999;
+        margin-top: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        width: 40%;
+        height: 110vh;
+        background-color: rgb(230, 203, 179);
+        top: 0;
+        right:0;
+        margin-right: -59%;
+        transform: translateX(100%);
+        transition:all 0.5s linear;
+    }
+    .active #open{
+        display: none;
+    }
+    .active #close{
+        display: flex;
+    }
+    .active .nav{
+        transform: translateX(0);
+    }
+} 
+@media(max-width:769px){
+    .nav{
+        margin-top: 80%;
+    }
+}
+@media(max-width:426px){
+    .nav{
+        width: 32%;
+        padding:5%;
+        height: fit-content;
+        /* height: 80vh; */
+    }
+}  
