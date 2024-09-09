@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/cup.css">
+    <script src="cart.js" async></script>
+</head>
+<body>
+<div class="head">
+    <header class="header">
+    <a href="index.html"><img src="/images/stb.png" alt=""></a>
+    <nav class="nav">
+        <ul class="nav-list"><a class="n1 active" href="index.html">Home</a></ul>
+        <ul class="nav-list"><a class="n1" href="review.html">Reviews</a></ul>
+        <ul><a href="#" id="cart"><button class="btn"><i class="fa-solid fa-cart-shopping cart-icon"></i></button></a></ul>    
+        <div class="cart-section">
+            <i class="fa-solid fa-xmark" id="cart-close"></i>
+            <h1>Your Cart</h1>
+            <div class="cart-show">
+                <!-- <div class="item-image">
+                    <img src="/images/cake1.jpg" alt="">
+                    </div>
+                    <div class="item-details">
+                    <div class="name">Sandy's Chocolate</div>
+                    <div class="cart-item-price">$20.00</div>
+                    </div> -->
+            </div>
+            <a href=""><button>Pay Now</button></a>
+        </div>
+    </nav>
+    <div class="icon">
+        <i class="fa-solid fa-bars" id="open"></i>
+        <i class="fa-solid fa-xmark" id="close"></i>
+    </div>
+    </header>
+</div>
+
+<div class="heading1">
+    <h1>Our Traditional Drinks...</h1>
+</div>    
+
+<section>
+<div class="container swiper">
+    <div class="slider-wrapper">
+        <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide ">
+                <div class="image">
+                    <a href=""><img src="/images/c1.jpg" alt=""></a>
+                </div>
+                <div class="info">
+                    <h4>Traditional Amaretto</h4>
+                </div>
+                <div class="button">
+                    <button class="order-button1">View Item</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-item swiper-slide">
+            <div class="image">
+                <a href=""><img src="/images/C2.jpg" alt=""></a>
+            </div>
+            <div class="info">
+                <h4>Traditional Turkish</h4>
+            </div>
+            <div class="button">
+                <button class="order-button2">View Item</button>
+            </div>
+        </div>
+    
+        <div class="card-item swiper-slide">
+            <div class="image">
+                <a href=""><img src="/images/c3.jpg" alt=""></a>
+            </div>
+            <div class="info">
+                <h4>Traditional Chinese</h4>
+            </div>
+            <div class="button">
+                <button class="order-button3">View Item</button>
+            </div>
+        </div>
+    
+        <div class="card-item swiper-slide">
+            <div class="image">
+                <a href=""><img src="/images/c4.jpg" alt=""></a>
+            </div>
+            <div class="info">
+                <h4>Traditional Irish</h4>
+            </div>
+            <div class="button">
+                <button class="order-button4">View Item</button>
+            </div>
+        </div> 
+        
+        <div class="card-item swiper-slide">
+            <div class="image">
+                <a href=""><img src="/images/c5.jpg" alt=""></a>
+            </div>
+            <div class="info">
+                <h4>Tradirional French</h4>
+            </div>
+            <div class="button">
+                <button class="order-button5">View Item</button>
+            </div>
+        </div> 
+    
+        <div class="card-item swiper-slide">
+            <div class="image">
+                <a href=""><img src="/images/c6.jpg" alt=""></a>
+            </div>
+            <div class="info">
+                <h4>Traditional Mexican</h4>
+            </div>
+            <div class="button">
+                <button class="order-button6">View Item</button>
+            </div>
+        </div> 
+    
+       <div class="card-item swiper-slide">
+            <div class="image">
+                <a href=""><img src="/images/c7.jpg" alt=""></a>
+            </div>
+            <div class="info">
+                <h4>Traditional Argentinian</h4>
+            </div>
+            <div class="button">
+                <button class="order-button7">View Item</button>
+            </div>
+       </div> 
+    
+        <div class="card-item swiper-slide">
+            <div class="image">
+                <a href=""><img src="/images/c8.jpg" alt=""></a>
+            </div>
+            <div class="info">
+                <h4>Traditional Cuban Espresso</h4>
+            </div>
+            <div class="button">
+                <button class="order-button8">View Item</button>
+            </div>
+        </div> 
+
+        <div class="swiper-pagination"></div>
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+</div>
+</section>
+
+<div class="heading2">
+    <h1>Everyone's Favourite....</h1>
+</div>
+
+<section>
+    <div class="container swiper">
+        <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide ">
+                    <div class="image">
+                        <a href=""><img src="/images/t1.webp" alt=""></a>
+                    </div>
+                    <div class="info">
+                        <h4>Brown Sugar Espresso</h4>
+                    </div>
+                    <div class="button" id="order">
+                        <button class="order-button9">View Item</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card-item swiper-slide">
+                <div class="image">
+                    <a href=""><img src="/images/t2.png" alt=""></a>
+                </div>
+                <div class="info">
+                    <h4>Pumpkin Cream Cold Brew</h4>
+                </div>
+                <div class="button">
+                    <button class="order-button10">View Item</button>
+                </div>
+            </div>
+        
+            <div class="card-item swiper-slide">
+                <div class="image">
+                    <a href=""><img src="/images/t3.jpg" alt=""></a>
+                </div>
+                <div class="info">
+                    <h4>Iced Caramel Macchiato</h4>
+                </div>
+                <div class="button">
+                    <button class="order-button11">View Item</button>
+                </div>
+            </div>
+        
+            <div class="card-item swiper-slide">
+                <div class="image">
+                    <a href=""><img src="/images/t4.jpg" alt=""></a>
+                </div>
+                <div class="info">
+                    <h4>Salted Caramel Cream</h4>
+                </div>
+                <div class="button">
+                    <button class="order-button12">View Item</button>
+                </div>
+            </div> 
+            
+            <div class="card-item swiper-slide">
+                <div class="image">
+                    <a href=""><img src="/images/t5.jpg" alt=""></a>
+                </div>
+                <div class="info">
+                    <h4>Pumpkin Spice Latte</h4>
+                </div>
+                <div class="button">
+                    <button class="order-button13">View Item</button>
+                </div>
+            </div> 
+        
+            <div class="card-item swiper-slide">
+                <div class="image">
+                    <a href=""><img src="/images/t6.jpg" alt=""></a>
+                </div>
+                <div class="info">
+                    <h4>Vanila Bean Frappuccino</h4>
+                </div>
+                <div class="button">
+                    <button class="order-button14">View Item</button>
+                </div>
+            </div> 
+        
+           <div class="card-item swiper-slide">
+                <div class="image">
+                    <a href=""><img src="/images/t7.webp" alt=""></a>
+                </div>
+                <div class="info">
+                    <h4>Toasted Vanilla Espresso</h4>
+                </div>
+                <div class="button">
+                    <button class="order-button15">View Item</button>
+                </div>
+           </div> 
+        
+            <div class="card-item swiper-slide">
+                <div class="image">
+                    <a href=""><img src="/images/t8.jpg" alt=""></a>
+                </div>
+                <div class="info">
+                    <h4>Peppermint Mocha</h4>
+                </div>
+                <div class="button">
+                    <button class="order-button16">View Item</button>
+                </div>
+            </div> 
+    
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div>
+    </div>
+</section>
+
+<div class="pop-up1">
+    <div class="content1" id="content01">
+        <i class="fa-solid fa-xmark" id="order-close1"></i>
+        <h3 class="item-title">Traditional Amaretto</h3>
+
+        <div class="image1" id="image01">
+            <img class="pop-up-image" src="/images/c1.jpg" alt="">
+        </div>
+        <p> Add a swig of booze to your coffee to make Amaretto Coffee! 
+            This spiked hot drink is part cocktail, part dessert: and 
+            you won’t be able to stop sipping it. </p>
+        <div class="price">
+            <h2 class="actual-price">$17.00</h2>
+        </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up2">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close2"></i>
+        <h3 class="item-title">Traditional Turkish</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/C2.jpg" alt="">
+        </div>
+        <p> Turkish coffee is a traditional Turkish beverage 
+            that’s popular in Turkey and other parts of Europe and Asia.
+            This beverage can be brewed with spices and sugar, and it’s 
+            will just blow your taste buds with tones of flavour.  </p>
+        <div cla clas="price">
+            <h2 class="actual-price" id="actual-price2">$17.00</h2>
+        </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up3">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close3"></i>
+        <h3 class="item-title">Traditional Chinese</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/c3.jpg" alt="">
+        </div>
+        <p> <b>Looking for something refreshing?</b><br>
+            Try this traditional chinese-style coffee to wake your mind up.
+            Mild acidity with a light body and strong taste, floral and sweet tastes, Exactly what you crave for. </p>
+        <div class="price">
+            <h2 class="actual-price">$17.00</h2>
+        </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up4">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close4"></i>
+        <h3 class="item-title">Traditional Irish</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/c4.jpg" alt="">
+        </div>
+        <p> Love booze in your cup of joe? 
+            Try the Tradirional Irish Coffee!
+            There’s nothing more soul-warming than 
+            the combination of bitter coffee, buttery whisky, 
+            and frothy w clashipped cream. </p>
+        <div class="price">
+            <h2 class="actual-price">$17.00</h2>
+        </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up5">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close5"></i>
+        <h3 class="item-title">Traditional French</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/c5.jpg" alt="">
+        </div>
+        <p>Whether you are traveling to France or just want to feel 
+            French for a day, why not try drinking coffee like the French? 
+            You may wonder what the most popular coffee drinks are and how to order them.
+            No wonder we are here for You...  </p>
+        <div cla clas="price">
+            <h2 class="actual-price" id="actual-price2">$17.00</h2>
+        </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up6">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close6"></i>
+        <h3 class="item-title">Traditional Mexican</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/c6.jpg" alt="">
+        </div>
+        <p> This Mexican Coffee is a spin on the 
+            classic Irish coffee with Kahlua, tequila, 
+            and cinnamon, topped off with a cloud of fluffy whipped cream.
+            Just try this out and add this in your drink list... </p>
+        <div cla clas="price">
+            <h2 class="actual-price" id="actual-price2">$17.00</h2>
+        </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up7">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close7"></i>
+        <h3 class="item-title">Traditional Argentinian</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/c7.jpg" alt="">
+        </div>
+        <p> If you are used to your coffee experience being one of necessity, buckle up. 
+            In Argentina, to slug down coffee that has been made with TLC is a cultural transgression. 
+            You must savor it and take it in with all of your senses... </p>
+        <div class="price">
+            <h2 clas>$17.00</h2>
+        </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up8">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close8"></i>
+        <h3 class="item-title">Traditional Cuban Espresso</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/c8.jpg" alt="">
+        </div>
+        <p> Un cafecito caliente con espumita will be your favorite afternoon treat! 
+            Café Cubano is an espresso drink made with dark roast espresso brewed in a 
+            stovetop espresso maker then stirred with a luscious sugar foam. 
+            Whether enjoyed during breakfast, as a dessert, with strangers, 
+            or as a much clas-needed 3:05 pm energy boost, Cuban coffee is the heart of Miami Cuban culture.
+        </p>
+    <div class="price">
+        <h2 class="actual-price">$17.00</h2>
+    </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up9">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close9"></i>
+        <h3 class="item-title">Brown Sugar Espresso</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/t1.webp" alt="">
+        </div>
+        <p> <b>Ready to shake up your coffee routine?</b><br>
+            This captivating concoction marries the boldness of espresso with 
+            the rich creaminess of plant-based milk and the irresistible sweetness of 
+            the brown sugar syrup for a refreshingly energizing treat.
+  clas       </p>
+    <div class="price">
+        <h2 class="actual-price">$15.00</h2>
+    </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up10">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close10"></i>
+        <h3 class="item-title">Pumpkin Crew Cold Brew</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/t2.png" alt="">
+        </div>
+        <p> This creamy, aromatic homemade pumpkin cream cold brew coffee is 
+            the perfect drink to embrace the change of seasons.
+            This smooth cold brew coffee is topped with a delicious 
+            pumpkin sweet cream cold foam that screams Fall coffee!
+  clas       </p>
+    <div class="price">
+        <h2 class="actual-price">$13.00</h2>
+    </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up11">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close11"></i>
+        <h3 class="item-title">Iced Caramel Macchiato</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/t3.jpg" alt="">
+        </div>
+        <p> An iced caramel macchiato typically consists of espresso, milk, vanilla syrup, ice and caramel sauce. 
+            Two espresso shots are layered over vanilla syrup, milk and ice. 
+            The drink is then topped with caramel sauce. ​
+            The result is a refreshing, sweet coffee drink with a layered appearance.
+  clas       </p>
+    <div class="price">
+        <h2 class="actual-price">$16.00</h2>
+    </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up12">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close12"></i>
+        <h3 class="item-title">Salted Caramel Iced Cream</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/t4.jpg" alt="">
+        </div>
+        <p> As a caramel lover, sipping this Salted Caramel Iced Cream Coffee is a godsend! <br>
+            Have this Salted Caramel Iced Cream Coffee as your sweet pick-me-up to start your morning.
+        </p>
+    <div class="price">
+        <h2 class="actual-price">$14.00</h2>
+    </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up13">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close13"></i>
+        <h3 class="item-title">Pumpkin Spice Latte</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/t5.jpg" alt="">
+        </div>
+        <p> Have the best Pumpkin Spice Latte Coffee. <br> 
+            It uses real pumpkin puree, coffee, and fall spices. <br> 
+            It’s delicious and so much better than store-bought!
+        </p>
+        <div class="price">
+        <h2 class="actual-price">$13.00</h2>
+    </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up14">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close14"></i>
+        <h3 class="item-title">Vanilla Bean Espresso</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/t6.jpg" alt="">
+        </div>
+        <p> Hands down, truly the best latte you will ever have. 
+            Or, maybe even the best vanilla latte that you had of all time?
+            Even if you’re typically an iced latte kind of person, 
+            you’re going to love cozying up with this warm, sweet, ultra-comforting latte.
+  clas       </p>
+    <div class="price">
+        <h2 class="actual-price">$12.00</h2>
+    </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up15">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close15"></i>
+        <h3 class="item-title">Toasted Vanilla Espresso</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/t7.webp" alt="">
+        </div>
+        <p> This shaken espresso is great in the morning or as an afternoon pick-me-up with a sweet snack. 
+            Between the toasty vanilla flavor and the creamy oat milk to swirl it all together, 
+            it’s the perfect coffee treat. 
+        </p>
+        <div class="price">
+        <h2 class="actual-price">$11.00</h2>
+    </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<div class="pop-up16">
+    <div class="content1">
+        <i class="fa-solid fa-xmark" id="order-close16"></i>
+        <h3 class="item-title">Peppermint Mocha</h3>
+
+        <div class="image1">
+            <img class="pop-up-image" src="/images/t8.jpg" alt="">
+        </div>
+        <p> Two flavors that scream Christmastime are peppermint and chocolate. 
+            Put them together in a drink that’ll warm you from the inside out and 
+            you have the perfect holiday coffee <br> <b><u> 'A Peppermint Mocha!' </u></b>
+        </p>
+        <div class="price">
+        <h2 class="actual-price">$15.00</h2>
+    </div>
+        <div class="order-buttons">
+            <a href=""><button id="pay">Order</button></a>
+            <button class="cart">Add to Cart</button>
+        </div>    
+    </div>
+</div>
+
+<footer>
+    <div class="stb">
+        <a href="#" target="_blank"><img class="f-image" src="/images/stb.png" alt=""></a>
+    </div>
+    <div class="about">
+        <h4 class="fh1">About Us</h4>
+        <span class="para"><a class="fa1" href="https://www.starbucks.in/our-heritage">Our Heritage</a></span> <br>
+        <span class="para"><a class="fa1" href="https://www.starbucks.in/coffeeHouse">Coffehouse</a></span><br>
+        <span class="para"><a class="fa1" href="https://www.starbucks.in/our_company">Our Company</a></span><br>
+    </div>
+    <div class="social-media">
+        <h3 class="social-media">Social Media</h3>
+        <div class="social-icons">
+        <a class="social-iconss" href="https://www.instagram.com/starbucksindia/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="social-iconss" href="https://www.facebook.com/starbucksindia" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a class="social-iconss" href="https://x.com/starbucksindia" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="cup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/review.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="review.js" defer></script>
+</head>
+<body>
+    <div class="log-in">
+        <div class="log-in-details">
+            <form action="index.js">
+                <i class="fa-solid fa-xmark log-in-close"></i><br>
+                <h1>Log In</h1>
+                <input type="text" name="username" id="in1" placeholder="Enter Username">
+                <input type="password" name="password" id="in2" placeholder="Enter Password">
+                <label for="remember">
+                    <input type="checkbox" name="remember" id="in3">
+                    <span id="remember-text">Remember Me?</span>
+                </label>
+                <a href=""><button class="sign-btn">Sign In</button></a>
+                <span class="sign-up-message">Don't have an account yet?</span>
+                <a href="signin.html" class="sign-up-redirect">Sign UP</a>
+            </form>
+        </div>    
+    </div>
+<div class="head">
+
+<header class="header">
+<a href="index.html"> <img src="/images/stb.png" alt=""> </a>
+<nav class="nav">
+    <ul class="nav-list"><a class="n1 active" href="index.html">Home</a></ul>
+    <ul class="nav-list"><a class="n1" href="review.html">Reviews</a></ul>
+    <ul><a href="#" ><button class="btn">Log In</button></a></ul>    
+</nav>
+<div class="icon">
+    <i class="fa-solid fa-bars" id="open"></i>
+    <i class="fa-solid fa-xmark" id="close"></i>
+</div>
+</header>
+</div><br>
+<h1>Top Reviews</h1>
+<section class="comments">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>    
+</section>
+
+<footer>
+    <div class="stb">
+        <a href="#" target="_blank"><img class="f-image" src="/images/stb.png" alt=""></a>
+    </div>
+    <div class="about">
+        <h4 class="fh1">About Us</h4>
+        <span class="para"><a class="fa1" href="">Our Heritage</a></span> <br>
+        <span class="para"><a class="fa1" href="">Coffehouse</a></span><br>
+        <span class="para"><a class="fa1" href="">Our Company</a></span><br>
+    </div>
+    <div class="social-media">
+        <h3 class="social-media">Social Media</h3>
+        <div class="social-icons">
+        <a class="social-iconss" href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="social-iconss" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a class="social-iconss" href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
